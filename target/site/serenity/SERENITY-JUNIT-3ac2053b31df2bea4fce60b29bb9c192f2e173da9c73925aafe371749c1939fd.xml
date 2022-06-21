@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="1" name="in.reqres.usersinfo.UserCRUDTest" skipped="0" tests="5" time="3.58" timestamp="2022-06-21T22:33:30.390+01:00[Europe/London]"><testcase classname="in.reqres.usersinfo.UserCRUDTest" name="This will create a new user"><error message="java.lang.String cannot be cast to java.lang.Integer" type="java.lang.ClassCastException">java.lang.String cannot be cast to java.lang.Integer</error><system-err>java.lang.String cannot be cast to java.lang.Integer&#13;
+in.reqres.usersinfo.UserCRUDTest.test001(UserCRUDTest.java:37)&#13;
+</system-err></testcase><testcase classname="in.reqres.usersinfo.UserCRUDTest" name="Verify if the user was added to the records list"><error message="The parameter &quot;first_name&quot; was used but not defined. Define parameters using the JsonPath.params(...) function" type="java.lang.IllegalArgumentException">The parameter "first_name" was used but not defined. Define parameters using the JsonPath.params(...) function</error><system-err>The parameter "first_name" was used but not defined. Define parameters using the JsonPath.params(...) function&#13;
+io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:50)&#13;
+io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)&#13;
+io.restassured.path.json.JsonPath.get(JsonPath.java:202)&#13;
+io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)&#13;
+io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)&#13;
+in.reqres.usersinfo.UserSteps.getUserInfoByFirstName(UserSteps.java:40)&#13;
+in.reqres.usersinfo.UserCRUDTest.test002(UserCRUDTest.java:45)&#13;
+</system-err></testcase><testcase classname="in.reqres.usersinfo.UserCRUDTest" name="This will login a user"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.usersinfo.UserSteps.userLogin(UserSteps.java:55)&#13;
+in.reqres.usersinfo.UserCRUDTest.test003(UserCRUDTest.java:54)&#13;
+</system-err></testcase><testcase classname="in.reqres.usersinfo.UserCRUDTest" name="Update the user information and verify the updated information"/><testcase classname="in.reqres.usersinfo.UserCRUDTest" name="Delete the student and verify if the student is deleted!"/></testsuite>

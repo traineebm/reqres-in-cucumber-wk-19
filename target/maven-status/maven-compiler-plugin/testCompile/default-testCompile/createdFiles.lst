@@ -1,0 +1,4 @@
+in\reqres\usersinfo\UserCRUDTest.class
+in\reqres\cucumber\UsersSteps.class
+in\reqres\ReqresRunner.class
+in\reqres\testbase\TestBase.class

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User CRUD test","This will create a new user","ERROR","2022-06-21T22:33:30.390+01:00[Europe/London]","0.0","3.03"
+"User CRUD test","Verify if the user was added to the records list","ERROR","2022-06-21T22:33:33.447+01:00[Europe/London]","0.0","0.14"
+"User CRUD test","This will login a user","FAILURE","2022-06-21T22:33:33.642+01:00[Europe/London]","0.0","0.15"
+"User CRUD test","Update the user information and verify the updated information","SUCCESS","2022-06-21T22:33:33.793+01:00[Europe/London]","0.0","0.14"
+"User CRUD test","Delete the student and verify if the student is deleted!","SUCCESS","2022-06-21T22:33:33.931+01:00[Europe/London]","0.0","0.13"

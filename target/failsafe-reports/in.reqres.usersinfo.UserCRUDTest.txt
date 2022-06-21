@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: in.reqres.usersinfo.UserCRUDTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 5.029 sec <<< FAILURE! - in in.reqres.usersinfo.UserCRUDTest
+test001(in.reqres.usersinfo.UserCRUDTest)  Time elapsed: 3.054 sec  <<< ERROR!
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Integer
+	at in.reqres.usersinfo.UserCRUDTest.test001(UserCRUDTest.java:37)
+
+test002(in.reqres.usersinfo.UserCRUDTest)  Time elapsed: 0.136 sec  <<< ERROR!
+groovy.lang.MissingPropertyException: No such property: first_name for class: Script1
+	at Script1.run(Script1.groovy:1)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:623)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:594)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:398)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:200)
+	at in.reqres.usersinfo.UserSteps.getUserInfoByFirstName(UserSteps.java:40)
+	at in.reqres.usersinfo.UserCRUDTest.test002(UserCRUDTest.java:45)
+
+test003(in.reqres.usersinfo.UserCRUDTest)  Time elapsed: 0.148 sec  <<< FAILURE!
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at in.reqres.usersinfo.UserSteps.userLogin(UserSteps.java:55)
+	at in.reqres.usersinfo.UserCRUDTest.test003(UserCRUDTest.java:54)
+
